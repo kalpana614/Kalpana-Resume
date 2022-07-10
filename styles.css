@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --intro-bg-color: rgba(30, 160, 117, 0.8);
+  --header-bg-color: rgba(10, 100, 155, 0.5);
+}
+body {
+  height: 100%;
+  line-height: 1.5em;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid green;
+}
+.flex > ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.container {
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  height: 100%;
+  gap: 30px;
+  border-radius: 1.1em;
+  overflow: hidden;
+}
+.intro {
+  background-color: var(--intro-bg-color);
+  padding: 2em;
+}
+.details {
+  padding: 20px;
+}
+header {
+  background-color: var(--header-bg-color);
+  padding: 12px;
+  color: whitesmoke;
+  border-radius: 0.3em;
+  overflow: hidden;
+  margin-top: 5px;
+}
+header > h1 {
+  margin-bottom: 10px;
+}
+.skill-group ul {
+  padding-left: 30px;
+}
+.skill-group {
+  margin: 15px;
+}
+hr {
+  margin: 10px 0;
+}
+.skill-group hr {
+  background-color: brown;
+}
+.bold {
+  font-weight: bold;
+}
+h2,
+.bold {
+  letter-spacing: 0.1rem;
+}
+.italic {
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.certifications a {
+  font-style: italic;
+}
+.certifications p {
+  margin-bottom: 10px;
+}
+.certifications ul {
+  margin-top: 10px;
+}
+.education-skills h2 {
+  font-size: 400;
+  color: rgba(39, 8, 85, 0.8);
+}
+
+.education-skills ul {
+  margin: 10px 0;
+  padding-left: 30px;
+}
+.education h3 {
+  font-weight: 700;
+  font-size: medium;
+}
+.education p {
+  font-style: italic;
+}
+.skill-title {
+  color: rgb(0, 61, 117);
+
+  font-weight: 700;
+}
+.skill-set,
+.education {
+  color: rgba(13, 3, 30, 0.7);
+}
+
+.college {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex {
+    display: flex;
+    gap: 50px;
+  }
+  .flex li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+  }
+  .technical-skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .pg .year {
+    padding-right: 1em;
+  }
+}
+@media screen and (max-width: 729px) {
+  .flex,
+  img {
+    display: block;
+  }
+  img {
+    margin: 0 auto;
+  }
+}
